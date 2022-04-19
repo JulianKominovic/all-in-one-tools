@@ -3,6 +3,12 @@ Set of development tools for a faster web development.
 
 
 ### Libraries
+
+#### Optimizaciones
+- Webpack analyzer
+- Node moudules analyzer
+- package json analyzer
+
 #### Image manipulation
 - https://www.npmjs.com/package/image-convert
 - https://www.npmjs.com/package/sharpie (image shapening)
