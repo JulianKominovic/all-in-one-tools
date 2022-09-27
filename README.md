@@ -9,7 +9,18 @@ Set of development tools for a faster web development.
 - Node moudules analyzer
 - package json analyzer
 
+### Transform
 https://transform.tools/
+
+### Code smells
+https://www.npmjs.com/package/reactsniffer
+https://www.npmjs.com/package/sonarjs/v/1.0.0-0
+
+### Testing
+- Jest playgorund
+
+### Playground
+- JSX y React playground
 
 #### Image manipulation
 - https://www.npmjs.com/package/image-convert
