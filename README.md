@@ -9,6 +9,8 @@ Set of development tools for a faster web development.
 - Node moudules analyzer
 - package json analyzer
 
+https://transform.tools/
+
 #### Image manipulation
 - https://www.npmjs.com/package/image-convert
 - https://www.npmjs.com/package/sharpie (image shapening)
