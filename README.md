@@ -18,9 +18,14 @@ https://www.npmjs.com/package/sonarjs/v/1.0.0-0
 
 ### Testing
 - Jest playgorund
+- https://www.npmjs.com/package/autocannon
+- https://www.npmjs.com/package/artillery
 
 ### Playground
 - JSX y React playground
+
+### CSS
+https://www.npmjs.com/package/clean-css
 
 #### Image manipulation
 - https://www.npmjs.com/package/image-convert
