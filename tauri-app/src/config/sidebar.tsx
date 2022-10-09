@@ -1,6 +1,6 @@
 import TreeNode from "primereact/treenode";
 import { VscJson } from "react-icons/vsc";
-import { SiTypescript } from "react-icons/si";
+import { SiJavascript, SiTypescript } from "react-icons/si";
 import { BsArrowRight } from "react-icons/bs";
 import { RichestTreeNode } from "../ui/layout/Sidebar";
 import routes from "./routes";
@@ -14,8 +14,8 @@ const PARSERS: Partial<RichestTreeNode> = {
 
   children: [
     {
-      key: routes.JSON_TO_TS,
-      data: routes.JSON_TO_TS,
+      key: routes.JSON_TO_TS.url,
+      data: routes.JSON_TO_TS.url,
       label: "JSON to Typescript",
       custom_icon: (
         <>
@@ -31,20 +31,29 @@ const PARSERS: Partial<RichestTreeNode> = {
 const PLAYGROUND: Partial<RichestTreeNode> = {
   key: "playground",
   label: "Playground",
-  data: "Documents Folder",
   icon: "pi pi-fw pi-inbox",
   children: [
     {
-      key: "0-0",
-      label: "Work",
-      data: "Work Folder",
-      icon: "pi pi-fw pi-cog",
+      key: routes.PLAYGROUND_JS.url,
+      data: routes.PLAYGROUND_JS.url,
+      label: "Javascript",
+      custom_icon: (
+        <>
+          <SiJavascript />
+        </>
+      ),
+      leaf: true,
     },
     {
-      key: "0-1",
-      label: "Home",
-      data: "Home Folder",
-      icon: "pi pi-fw pi-home",
+      key: routes.PLAYGROUND_TS.url,
+      data: routes.PLAYGROUND_TS.url,
+      label: "Typescript",
+      custom_icon: (
+        <>
+          <SiTypescript />
+        </>
+      ),
+      leaf: true,
     },
   ],
 };

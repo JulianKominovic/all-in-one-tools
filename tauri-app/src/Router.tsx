@@ -7,6 +7,8 @@ import "./index.css";
 import routes, { BASE_URLS } from "./config/routes";
 import Header from "./ui/layout/Header";
 import HeaderItems from "./config/header";
+import Home from "./modules/home";
+import Playground from "./modules/playground";
 
 function Router() {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -24,9 +26,19 @@ function Router() {
       />
       <div className="layout-main-container">
         <Routes>
-          <Route path="/" element={<>hola home</>} />
+          <Route path="/" element={<Home />} />
           <Route path={BASE_URLS.PARSERS_BASE_URL}>
-            <Route path={routes.JSON_TO_TS} element={<JsonToTs />} />
+            <Route path={routes.JSON_TO_TS.url} element={<JsonToTs />} />
+          </Route>
+          <Route path={BASE_URLS.PLAYGROUND_BASE_URL}>
+            <Route
+              path={routes.PLAYGROUND_JS.url}
+              element={<Playground compileType="babel" />}
+            />
+            <Route
+              path={routes.PLAYGROUND_TS.url}
+              element={<Playground compileType="tsc" />}
+            />
           </Route>
         </Routes>
       </div>

@@ -1,0 +1,9 @@
+.flex {
+  display: flex;
+}
+.flex-dir-col {
+  flex-direction: column;
+}
+.max-20ch {
+  max-width: 20ch;
+}

@@ -1,0 +1,52 @@
+.home__layout {
+  width: 100%;
+}
+.flex {
+  display: flex;
+}
+.gap_4 {
+  gap: 16px;
+}
+.center_all {
+  align-items: center;
+  justify-content: center;
+}
+.dir__col {
+  flex-direction: column;
+}
+.mx_auto {
+  margin: 0 auto;
+}
+.my_2 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.hero {
+  max-width: 120ch;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  gap: 24px;
+}
+.hero a {
+  text-decoration: none;
+}
+.card {
+  max-width: 40ch;
+  border-radius: 12px !important;
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.1s ease-in-out;
+}
+.divider::before {
+  content: "" !important;
+  display: block !important;
+  color: black !important;
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+  width: 100% !important;
+}
